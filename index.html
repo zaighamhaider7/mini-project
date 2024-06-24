@@ -17,6 +17,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- aos animation javascript link -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- isotoplink -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 </head>
 <body>
   <!-- herosec -->
@@ -91,11 +94,10 @@
   </nav>
   <!-- card section -->
   <section>
-    <div class="container-sm  mt-2" id="offercard">
+    <div class="container-sm  mt-4" id="offercard">
       <div class="row">
         <div class="col">
-          <div class="card mb-3 " style="max-width: 540px; background-color: #222831; color: #f1f1f1;"
-            data-aos="fade-up" data-aos-duration="1000">
+          <div class="card mb-3 " style="max-width: 540px; background-color: #222831; color: #f1f1f1;">
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="cardimg">
@@ -121,8 +123,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card mb-3" style="max-width: 540px;  background-color: #222831; color: #f1f1f1;"
-            data-aos="fade-up" data-aos-duration="1000">
+          <div class="card mb-3" style="max-width: 540px;  background-color: #222831; color: #f1f1f1;">
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="cardimg">
@@ -152,13 +153,22 @@
   <!-- grid section -->
   <section>
     <div class="grid" id="menu">
-      <h1 style="text-align: center; font-family: 'Cookie', cursive; font-size: 4rem; margin-top: 1em;">
-        Our Menu
-      </h1>
-      <div class="container  mb-5">
-        <div class="row">
-          <div class="col ">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+      <div class="filterproducts">
+        <h1 style="text-align: center; font-family: 'Cookie', cursive; font-size: 4rem;">
+          Our Menu
+        </h1>
+        <div class="filterbtn">
+            <button data-filter="*" class="prductbtn">All</button>
+            <button data-filter=".burger" class="prductbtn">Burger</button>
+            <button data-filter=".pizza" class="prductbtn">Pizza</button>
+            <button data-filter=".pasta" class="prductbtn">Pasta</button>
+            <button data-filter=".fries" class="prductbtn">Fries</button>
+        </div>
+    </div>
+      <div class="container products mt-3  mb-5">
+        <div class="row  mt-3 grid">
+          <div class="col col col-lg-4 col-md-6 grid-item pizza">
+            <div class="griditems" >
               <div class="gridimg ">
                 <img src="./g1.png" alt="pizza" height="200px" width="auto" class="scale">
               </div>
@@ -189,8 +199,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item burger">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g2.png" alt="burger" height="200px" width="auto" class="scale">
               </div>
@@ -221,8 +231,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item pizza">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g3.png" alt="pizza" height="170px" width="auto" class="scale">
               </div>
@@ -253,8 +263,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item pasta">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g4.png" alt="pasta" height="160px" width="auto" class="scale">
               </div>
@@ -285,8 +295,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item fries">
+            <div class="griditems" >
               <div class="gridimg ">
                 <img src="./g5.png" alt="fries" height="120px" width="180px" class="scale">
               </div>
@@ -317,8 +327,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item pizza">
+            <div class="griditems" >
               <div class="gridimg ">
                 <img src="./g6.png" alt="pizza" height="170px" width="auto" class="scale">
               </div>
@@ -348,9 +358,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          </div> 
+          <div class="col col col-lg-4 col-md-6 grid-item burger">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g7.png" alt="burger" height="210px" width="auto" class="scale">
               </div>
@@ -381,8 +391,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item burger">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g8.png" alt="burger" height="170px" width="auto" class="scale">
               </div>
@@ -413,8 +423,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="griditems" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col col col-lg-4 col-md-6 grid-item pasta">
+            <div class="griditems">
               <div class="gridimg ">
                 <img src="./g9.png" alt="pasta" height="160px" width="auto" class="scale">
               </div>
@@ -477,15 +487,10 @@
       </div>
     </div>
   </section>
-  <!-- addtofvrt slide -->
-  <!-- <div id="slide">
-    <p style="text-align: center; margin-top: 5%;">
-      Added to Favourite items
-    </p>
-    <button id="cross">
-      x
-    </button>
-  </div> -->
+ 
+
+
+
   <!-- footersec -->
   <footer>
     <div class="footeritems" style="text-align: center; font-weight: 300;">
@@ -552,73 +557,24 @@
       }
     )
   </script>
-  <!-- <script>
-    $(document).ready(
-      function () {
-        $('.fvrt1').click(
-          function () {
-            $('#like1').attr('src', "assets/likefilled.png");
-            $('#slide').animate({ right: '10px' });
-          }
-        ),
-          $('.fvrt2').click(
-            function () {
-              $('#like2').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt3').click(
-            function () {
-              $('#like3').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt4').click(
-            function () {
-              $('#like4').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt5').click(
-            function () {
-              $('#like5').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt6').click(
-            function () {
-              $('#like6').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt7').click(
-            function () {
-              $('#like7').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt8').click(
-            function () {
-              $('#like8').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('.fvrt9').click(
-            function () {
-              $('#like9').attr('src', "assets/likefilled.png");
-              $('#slide').animate({ right: '10px' })
-            }
-          ),
-          $('#cross').click(
-            function () {
-              $('#slide').animate({ right: '-500px' })
-            }
-          )
-      }
-    )
-  </script> -->
+  
   <script>
     AOS.init();
   </script>
+  <script>
+    $(document).ready(function(){
+        // Initialize Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
+    
+        // Filter items on button click
+        $('.filterbtn').on('click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+    });
+    </script>
 </body>
 </html>
